@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1565F05B-20B7-4352-9F70-6EF39689C13D}</ProjectGuid>
+    <RootNamespace>Jx3ZhuToolsCode</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\Jx3ZhuToolsCode.def</ModuleDefinitionFile>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\Jx3ZhuToolsCode.def</ModuleDefinitionFile>
+      <AdditionalDependencies>lib\\lua.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;libcmtd.lib;nafxcw.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CAllTaskObject.cpp" />
+    <ClCompile Include="CAllTaskTree.cpp" />
+    <ClCompile Include="CCall.cpp" />
+    <ClCompile Include="CCommon.cpp" />
+    <ClCompile Include="CControlResponseTeam.cpp" />
+    <ClCompile Include="CDoodPickups.cpp" />
+    <ClCompile Include="CGameCmdSocket.cpp" />
+    <ClCompile Include="CGameWndProc.cpp" />
+    <ClCompile Include="CGAME_FISH.cpp" />
+    <ClCompile Include="CGAME_MAIN.cpp" />
+    <ClCompile Include="CGAME_TASK.cpp" />
+    <ClCompile Include="CGroundInfo.cpp" />
+    <ClCompile Include="CGroundTree.cpp" />
+    <ClCompile Include="CJx3ZhuTools.cpp" />
+    <ClCompile Include="CLua.cpp" />
+    <ClCompile Include="CMonsterInformation.cpp" />
+    <ClCompile Include="CMonsterTree.cpp" />
+    <ClCompile Include="CObjectBase.cpp" />
+    <ClCompile Include="CPackArray.cpp" />
+    <ClCompile Include="CPackObject.cpp" />
+    <ClCompile Include="CPackPercelArray.cpp" />
+    <ClCompile Include="CPickupInfo.cpp" />
+    <ClCompile Include="CPlayerInfomation.cpp" />
+    <ClCompile Include="CPlayerTree.cpp" />
+    <ClCompile Include="CRoleWear.cpp" />
+    <ClCompile Include="CShopGoodArray.cpp" />
+    <ClCompile Include="CShopGoodObject.cpp" />
+    <ClCompile Include="CShopGoodPriceObject.cpp" />
+    <ClCompile Include="CShopGoodPriceTree.cpp" />
+    <ClCompile Include="CShopTree.cpp" />
+    <ClCompile Include="CShopTreeObject.cpp" />
+    <ClCompile Include="CSkillObject.cpp" />
+    <ClCompile Include="CSkillTree.cpp" />
+    <ClCompile Include="CSkillXiuWeiObject.cpp" />
+    <ClCompile Include="CSkillXiuWeiTree.cpp" />
+    <ClCompile Include="CSocketCmd.cpp" />
+    <ClCompile Include="CTaskHasIDs.cpp" />
+    <ClCompile Include="CTaskJujimentArray.cpp" />
+    <ClCompile Include="CTaskJujmentObject.cpp" />
+    <ClCompile Include="CTest.cpp" />
+    <ClCompile Include="CThousands.cpp" />
+    <ClCompile Include="CUserConfig.cpp" />
+    <ClCompile Include="CUserInfo.cpp" />
+    <ClCompile Include="CUTF8.cpp" />
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="HOOK.cpp" />
+    <ClCompile Include="Jx3ZhuToolsCode.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CAllTaskObject.h" />
+    <ClInclude Include="CAllTaskTree.h" />
+    <ClInclude Include="CCall.h" />
+    <ClInclude Include="CCommon.h" />
+    <ClInclude Include="CControlResponseTeam.h" />
+    <ClInclude Include="CDoodPickups.h" />
+    <ClInclude Include="CGameCmdSocket.h" />
+    <ClInclude Include="CGameWndProc.h" />
+    <ClInclude Include="CGAME_FISH.h" />
+    <ClInclude Include="CGAME_MAIN.h" />
+    <ClInclude Include="CGAME_TASK.h" />
+    <ClInclude Include="CGroundInfo.h" />
+    <ClInclude Include="CGroundTree.h" />
+    <ClInclude Include="CJx3ZhuTools.h" />
+    <ClInclude Include="CLua.h" />
+    <ClInclude Include="CMonsterInformation.h" />
+    <ClInclude Include="CMonsterTree.h" />
+    <ClInclude Include="CObjectBase.h" />
+    <ClInclude Include="CPackArray.h" />
+    <ClInclude Include="CPackObject.h" />
+    <ClInclude Include="CPackPercelArray.h" />
+    <ClInclude Include="CPickupInfo.h" />
+    <ClInclude Include="CPlayerInfomation.h" />
+    <ClInclude Include="CPlayerTree.h" />
+    <ClInclude Include="CRoleWear.h" />
+    <ClInclude Include="CShopGoodArray.h" />
+    <ClInclude Include="CShopGoodObject.h" />
+    <ClInclude Include="CShopGoodPriceObject.h" />
+    <ClInclude Include="CShopGoodPriceTree.h" />
+    <ClInclude Include="CShopTree.h" />
+    <ClInclude Include="CShopTreeObject.h" />
+    <ClInclude Include="CSkillObject.h" />
+    <ClInclude Include="CSkillTree.h" />
+    <ClInclude Include="CSkillXiuWeiObject.h" />
+    <ClInclude Include="CSkillXiuWeiTree.h" />
+    <ClInclude Include="CSocketCmd.h" />
+    <ClInclude Include="CTaskHasIDs.h" />
+    <ClInclude Include="CTaskJujimentArray.h" />
+    <ClInclude Include="CTaskJujmentObject.h" />
+    <ClInclude Include="CTest.h" />
+    <ClInclude Include="CThousands.h" />
+    <ClInclude Include="CUserConfig.h" />
+    <ClInclude Include="CUserInfo.h" />
+    <ClInclude Include="CUTF8.h" />
+    <ClInclude Include="GameStruct.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="HOOK.h" />
+    <ClInclude Include="Jx3ZhuToolsCode.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SocketStruct.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cursor1.cur" />
+    <None Include="cursor2.cur" />
+    <None Include="Jx3ZhuToolsCode.def" />
+    <None Include="res\Jx3ZhuToolsCode.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Jx3ZhuToolsCode.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bitmap1.bmp" />
+    <Image Include="C:\Users\Administrator\Desktop\move.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Jx3ZhuToolsCode.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

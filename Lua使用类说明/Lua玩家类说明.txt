@@ -1,0 +1,38 @@
+CCPlayerTree -- 玩家二叉树类
+--初始化(参数为0)
+local playerTree = CCPlayerTree(0);
+--周围玩家数量
+local count = playerTree:LuaSize();
+--获取玩家对象地址(用来初始化类)
+local playerObjectAddr = playerTree:LuaGetPlayerInformation(i);
+-------------------------------------------------------------------
+CCPlayerInfomation 玩家类
+local __CCPlayerInfomation = CCPlayerInfomation(playerObjectAddr );
+
+--玩家ID
+local ID = __CCPlayerInfomation:getPlayerALLID();
+--玩家名称
+local Name = __CCPlayerInfomation:getPlayerName();
+--玩家X坐标
+local X = __CCPlayerInfomation:getPlayerX();
+--玩家Y坐标
+local Y = __CCPlayerInfomation:getPlayerY();
+--玩家Z坐标
+local Z = __CCPlayerInfomation:getPlayerZ();
+--玩家跟角色距离
+local desc =__CCPlayerInfomation:getPlayerDsc()
+--玩家等级
+local level=__CCPlayerInfomation:getPlayerLevel()
+----------------------------------------------------
+function 遍历所有玩家()
+	local playerTree = CCPlayerTree(0);
+	local count = playerTree:LuaSize();
+	输出信息("玩家数量:"..count)
+	for i=0,count-1 do  
+		local __CCPlayerInfomation = CCPlayerInfomation(playerTree:LuaGetPlayerInformation(i));
+		输出信息("["..(i+1).."] ID:"..__CCPlayerInfomation:getPlayerALLID()
+		.." 名称:"..tostring(__CCPlayerInfomation:getPlayerName())
+		.." 坐标:["..__CCPlayerInfomation:getPlayerX()..","..__CCPlayerInfomation:getPlayerY()..
+		"] 距离："..__CCPlayerInfomation:getPlayerDsc());
+	end
+end

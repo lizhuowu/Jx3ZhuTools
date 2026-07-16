@@ -1,0 +1,23 @@
+CCUserInfo --人物信息类
+--使用声明
+local _CCUserInfo = CCUserInfo()
+_CCUserInfo:getBaseAddr() -- 获取人物地址
+_CCUserInfo:getObjectID() -- 获取人物ID
+_CCUserInfo:getObjectPointX() --获取人物X坐标
+_CCUserInfo:getObjectPointY() --获取人物Y坐标
+_CCUserInfo:getObjectPointZ() --获取人物Z坐标
+_CCUserInfo:getObjectLevel() --获取人物等级
+_CCUserInfo:getObjectName() --获取人物名字
+_CCUserInfo:getObjectTitle() --获取人物称号
+_CCUserInfo:getObjectMap() --获取人物所在地图
+_CCUserInfo:getObjectCurrentBlood() --获取人物当前血
+_CCUserInfo:getObjectMaxBlood() --获取人物最大血
+_CCUserInfo:getObjectCurrentMagic() --获取人物当前蓝
+_CCUserInfo:getObjectMaxMagic() --获取人物最大蓝
+_CCUserInfo:getObjectBloodPercent() --获取人物血量百分比
+_CCUserInfo:getObjectMagicPercent() --获取人物蓝量百分比
+_CCUserInfo:getObjectDirection() --获取人物面向
+_CCUserInfo:getRoleBettle() --获取战斗状态
+_CCUserInfo:getRoleGold() --获取人物金币
+_CCUserInfo:getSelectObjectID() --获取选中对象ID
+_CCUserInfo:getRoleXiuWei() --人物修为

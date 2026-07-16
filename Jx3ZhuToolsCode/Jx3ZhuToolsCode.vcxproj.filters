@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="日志">
+      <UniqueIdentifier>{e25a1610-3728-4923-b9bf-2fa32fd98963}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="消息单例">
+      <UniqueIdentifier>{1bf1d5d6-d750-41c8-ac6b-734b2722ba48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LUA类">
+      <UniqueIdentifier>{914c994c-2af0-4095-946d-83b307ea1255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="角色信息">
+      <UniqueIdentifier>{7743b3f8-28ff-4f65-afda-d9cf85bde8a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="基类">
+      <UniqueIdentifier>{f7c028c5-b53d-4eb5-b8ef-13a2c5466578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公共">
+      <UniqueIdentifier>{361c945d-e187-4682-bd13-fe75c25e4ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CALL类">
+      <UniqueIdentifier>{4cf4df76-9bec-4dff-8569-1d522ee2f429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="结构体">
+      <UniqueIdentifier>{e420457f-55f5-437f-acc3-b7ccde048c15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="用户函数">
+      <UniqueIdentifier>{ec028b1b-ea07-4011-a65e-405640a07702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="怪物">
+      <UniqueIdentifier>{00e11b76-5a5d-4ec0-a970-6751b04885a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="地面">
+      <UniqueIdentifier>{0c94ae2f-f5e5-4366-8844-1797cf64f720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="拾取包裹">
+      <UniqueIdentifier>{c1ab8efe-ca8e-4d56-b886-5209312cf6a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="任务">
+      <UniqueIdentifier>{27bc2511-33c0-47ac-b4cd-9a87df4f21b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="任务\已接任务ID">
+      <UniqueIdentifier>{c7055465-4816-425a-a320-8850486ecb29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="任务\所有任务二叉">
+      <UniqueIdentifier>{fd7f39ab-af4d-4cc8-85fd-f4a516d12f4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="任务\任务判断条件">
+      <UniqueIdentifier>{faa6288a-c51c-4a68-b20c-fb8d46efe2da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="商店/购物类">
+      <UniqueIdentifier>{03940651-0e98-4ebe-a589-e4062aaf34e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="商店/购物类\物品单价">
+      <UniqueIdentifier>{5b728029-9d99-474e-84e2-80be5947697b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="背包">
+      <UniqueIdentifier>{3c5ee4be-386e-4e3b-ab8a-c01c3fedcef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="背包\背包包裹数组">
+      <UniqueIdentifier>{fb7cf994-22de-4926-9f00-1bbbebe54156}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="背包\背包数组">
+      <UniqueIdentifier>{236a8a44-7ba2-4452-bcff-f9a679282175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="玩家">
+      <UniqueIdentifier>{5aeae376-87b8-484b-ab08-5864405d2792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="控件">
+      <UniqueIdentifier>{a8335b92-9a89-4b96-874f-31b215d853a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="技能">
+      <UniqueIdentifier>{e5181a40-7571-4759-93c8-5f4366f0d891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="技能\技能升级修为二叉">
+      <UniqueIdentifier>{bd70767a-bec0-45a6-97d2-10f3225fd24f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="千机%28属于背包类型%29">
+      <UniqueIdentifier>{9860eaa3-1780-4ff0-822a-ba563e10edc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="穿戴装备%28属于背包类型%29">
+      <UniqueIdentifier>{856dfe04-f970-45e5-8122-74ecbc048077}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="通讯Socket">
+      <UniqueIdentifier>{70b03c6d-9638-4b2f-b06f-1d8fe97ff881}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DLL窗口">
+      <UniqueIdentifier>{c63a9944-769b-4137-9d79-222282147844}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Jx3ZhuToolsCode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CJx3ZhuTools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameWndProc.cpp">
+      <Filter>消息单例</Filter>
+    </ClCompile>
+    <ClCompile Include="CLua.cpp">
+      <Filter>LUA类</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjectBase.cpp">
+      <Filter>基类</Filter>
+    </ClCompile>
+    <ClCompile Include="CUserInfo.cpp">
+      <Filter>角色信息</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>公共</Filter>
+    </ClCompile>
+    <ClCompile Include="CCall.cpp">
+      <Filter>CALL类</Filter>
+    </ClCompile>
+    <ClCompile Include="CCommon.cpp">
+      <Filter>用户函数</Filter>
+    </ClCompile>
+    <ClCompile Include="CTest.cpp">
+      <Filter>日志</Filter>
+    </ClCompile>
+    <ClCompile Include="CMonsterInformation.cpp">
+      <Filter>怪物</Filter>
+    </ClCompile>
+    <ClCompile Include="CMonsterTree.cpp">
+      <Filter>怪物</Filter>
+    </ClCompile>
+    <ClCompile Include="CGroundInfo.cpp">
+      <Filter>地面</Filter>
+    </ClCompile>
+    <ClCompile Include="CGroundTree.cpp">
+      <Filter>地面</Filter>
+    </ClCompile>
+    <ClCompile Include="CPickupInfo.cpp">
+      <Filter>拾取包裹</Filter>
+    </ClCompile>
+    <ClCompile Include="CDoodPickups.cpp">
+      <Filter>拾取包裹</Filter>
+    </ClCompile>
+    <ClCompile Include="CTaskHasIDs.cpp">
+      <Filter>任务\已接任务ID</Filter>
+    </ClCompile>
+    <ClCompile Include="CTaskJujmentObject.cpp">
+      <Filter>任务\任务判断条件</Filter>
+    </ClCompile>
+    <ClCompile Include="CTaskJujimentArray.cpp">
+      <Filter>任务\任务判断条件</Filter>
+    </ClCompile>
+    <ClCompile Include="CAllTaskObject.cpp">
+      <Filter>任务\所有任务二叉</Filter>
+    </ClCompile>
+    <ClCompile Include="CAllTaskTree.cpp">
+      <Filter>任务\所有任务二叉</Filter>
+    </ClCompile>
+    <ClCompile Include="CShopTreeObject.cpp">
+      <Filter>商店/购物类</Filter>
+    </ClCompile>
+    <ClCompile Include="CShopTree.cpp">
+      <Filter>商店/购物类</Filter>
+    </ClCompile>
+    <ClCompile Include="CShopGoodArray.cpp">
+      <Filter>商店/购物类</Filter>
+    </ClCompile>
+    <ClCompile Include="CShopGoodObject.cpp">
+      <Filter>商店/购物类</Filter>
+    </ClCompile>
+    <ClCompile Include="CShopGoodPriceObject.cpp">
+      <Filter>商店/购物类\物品单价</Filter>
+    </ClCompile>
+    <ClCompile Include="CShopGoodPriceTree.cpp">
+      <Filter>商店/购物类\物品单价</Filter>
+    </ClCompile>
+    <ClCompile Include="HOOK.cpp">
+      <Filter>公共</Filter>
+    </ClCompile>
+    <ClCompile Include="CPackPercelArray.cpp">
+      <Filter>背包\背包包裹数组</Filter>
+    </ClCompile>
+    <ClCompile Include="CPackArray.cpp">
+      <Filter>背包\背包数组</Filter>
+    </ClCompile>
+    <ClCompile Include="CPackObject.cpp">
+      <Filter>背包\背包数组</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayerTree.cpp">
+      <Filter>玩家</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayerInfomation.cpp">
+      <Filter>玩家</Filter>
+    </ClCompile>
+    <ClCompile Include="CControlResponseTeam.cpp">
+      <Filter>控件</Filter>
+    </ClCompile>
+    <ClCompile Include="CRoleWear.cpp">
+      <Filter>穿戴装备%28属于背包类型%29</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillTree.cpp">
+      <Filter>技能</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillObject.cpp">
+      <Filter>技能</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillXiuWeiTree.cpp">
+      <Filter>技能\技能升级修为二叉</Filter>
+    </ClCompile>
+    <ClCompile Include="CThousands.cpp">
+      <Filter>千机%28属于背包类型%29</Filter>
+    </ClCompile>
+    <ClCompile Include="CUTF8.cpp">
+      <Filter>公共</Filter>
+    </ClCompile>
+    <ClCompile Include="CSkillXiuWeiObject.cpp">
+      <Filter>技能\技能升级修为二叉</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameCmdSocket.cpp">
+      <Filter>通讯Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="CUserConfig.cpp">
+      <Filter>通讯Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="CSocketCmd.cpp">
+      <Filter>通讯Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="CGAME_MAIN.cpp">
+      <Filter>DLL窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="CGAME_TASK.cpp">
+      <Filter>DLL窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="CGAME_FISH.cpp">
+      <Filter>DLL窗口</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Jx3ZhuToolsCode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CJx3ZhuTools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameWndProc.h">
+      <Filter>消息单例</Filter>
+    </ClInclude>
+    <ClInclude Include="CLua.h">
+      <Filter>LUA类</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjectBase.h">
+      <Filter>基类</Filter>
+    </ClInclude>
+    <ClInclude Include="CUserInfo.h">
+      <Filter>角色信息</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>公共</Filter>
+    </ClInclude>
+    <ClInclude Include="CCall.h">
+      <Filter>CALL类</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStruct.h">
+      <Filter>结构体</Filter>
+    </ClInclude>
+    <ClInclude Include="CCommon.h">
+      <Filter>用户函数</Filter>
+    </ClInclude>
+    <ClInclude Include="CTest.h">
+      <Filter>日志</Filter>
+    </ClInclude>
+    <ClInclude Include="CMonsterInformation.h">
+      <Filter>怪物</Filter>
+    </ClInclude>
+    <ClInclude Include="CMonsterTree.h">
+      <Filter>怪物</Filter>
+    </ClInclude>
+    <ClInclude Include="CGroundInfo.h">
+      <Filter>地面</Filter>
+    </ClInclude>
+    <ClInclude Include="CGroundTree.h">
+      <Filter>地面</Filter>
+    </ClInclude>
+    <ClInclude Include="CPickupInfo.h">
+      <Filter>拾取包裹</Filter>
+    </ClInclude>
+    <ClInclude Include="CDoodPickups.h">
+      <Filter>拾取包裹</Filter>
+    </ClInclude>
+    <ClInclude Include="CTaskHasIDs.h">
+      <Filter>任务\已接任务ID</Filter>
+    </ClInclude>
+    <ClInclude Include="CTaskJujmentObject.h">
+      <Filter>任务\任务判断条件</Filter>
+    </ClInclude>
+    <ClInclude Include="CTaskJujimentArray.h">
+      <Filter>任务\任务判断条件</Filter>
+    </ClInclude>
+    <ClInclude Include="CAllTaskObject.h">
+      <Filter>任务\所有任务二叉</Filter>
+    </ClInclude>
+    <ClInclude Include="CAllTaskTree.h">
+      <Filter>任务\所有任务二叉</Filter>
+    </ClInclude>
+    <ClInclude Include="CShopTreeObject.h">
+      <Filter>商店/购物类</Filter>
+    </ClInclude>
+    <ClInclude Include="CShopTree.h">
+      <Filter>商店/购物类</Filter>
+    </ClInclude>
+    <ClInclude Include="CShopGoodArray.h">
+      <Filter>商店/购物类</Filter>
+    </ClInclude>
+    <ClInclude Include="CShopGoodObject.h">
+      <Filter>商店/购物类</Filter>
+    </ClInclude>
+    <ClInclude Include="CShopGoodPriceObject.h">
+      <Filter>商店/购物类\物品单价</Filter>
+    </ClInclude>
+    <ClInclude Include="CShopGoodPriceTree.h">
+      <Filter>商店/购物类\物品单价</Filter>
+    </ClInclude>
+    <ClInclude Include="HOOK.h">
+      <Filter>公共</Filter>
+    </ClInclude>
+    <ClInclude Include="CPackPercelArray.h">
+      <Filter>背包\背包包裹数组</Filter>
+    </ClInclude>
+    <ClInclude Include="CPackArray.h">
+      <Filter>背包\背包数组</Filter>
+    </ClInclude>
+    <ClInclude Include="CPackObject.h">
+      <Filter>背包\背包数组</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayerTree.h">
+      <Filter>玩家</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayerInfomation.h">
+      <Filter>玩家</Filter>
+    </ClInclude>
+    <ClInclude Include="CControlResponseTeam.h">
+      <Filter>控件</Filter>
+    </ClInclude>
+    <ClInclude Include="CRoleWear.h">
+      <Filter>穿戴装备%28属于背包类型%29</Filter>
+    </ClInclude>
+    <ClInclude Include="CSkillTree.h">
+      <Filter>技能</Filter>
+    </ClInclude>
+    <ClInclude Include="CSkillObject.h">
+      <Filter>技能</Filter>
+    </ClInclude>
+    <ClInclude Include="CSkillXiuWeiTree.h">
+      <Filter>技能\技能升级修为二叉</Filter>
+    </ClInclude>
+    <ClInclude Include="CThousands.h">
+      <Filter>千机%28属于背包类型%29</Filter>
+    </ClInclude>
+    <ClInclude Include="CUTF8.h">
+      <Filter>公共</Filter>
+    </ClInclude>
+    <ClInclude Include="CSkillXiuWeiObject.h">
+      <Filter>技能\技能升级修为二叉</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameCmdSocket.h">
+      <Filter>通讯Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketStruct.h">
+      <Filter>通讯Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="CUserConfig.h">
+      <Filter>通讯Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="CSocketCmd.h">
+      <Filter>通讯Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="CGAME_MAIN.h">
+      <Filter>DLL窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="CGAME_TASK.h">
+      <Filter>DLL窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="CGAME_FISH.h">
+      <Filter>DLL窗口</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Jx3ZhuToolsCode.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\Jx3ZhuToolsCode.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="cursor1.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="cursor2.cur">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Jx3ZhuToolsCode.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\Administrator\Desktop\move.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,36 @@
+-----------------------------------
+CCSkillTree --技能二叉类
+--初始化
+local  _CCSkillTree = CCSkillTree();
+--获取二叉数量
+local count = _CCSkillTree:LuaSize();
+--获取技能对象的开始地址
+local SkillObjectAddr = _CCSkillTree:LuaGetSkillAddr(i);
+------------------------------------
+CCSkillObject --技能类
+--初始化
+local _CCSkillObject = CCSkillObject(SkillObjectAddr);
+--获取技能名称
+_CCSkillObject:getSkillName()；
+--获取技能ID
+_CCSkillObject:getSkillID();
+--获取技能等级
+_CCSkillObject:getSkillLevel();
+--获取技能升级修为
+_CCSkillObject:getCurrentXiuWei();
+--判断怪物视野用
+_CCSkillObject:getObjecteAddr();
+
+
+----------------------------------------------------------------------------------
+function 遍历所有技能()
+	local  _CCSkillTree = CCSkillTree();
+	local count = _CCSkillTree:LuaSize();
+	for i=0,count-1 do  
+		local _CCSkillObject = CCSkillObject(_CCSkillTree:LuaGetSkillAddr(i));
+		输出信息("技能名称:".._CCSkillObject:getSkillName()..",技能ID:".._CCSkillObject:getSkillID()..",技能等级:"
+		.._CCSkillObject:getSkillLevel()..",技能升级修为:".._CCSkillObject:getCurrentXiuWei());
+		local 当前修为 = 取技能当前修为(_CCSkillObject:getSkillID());
+		输出信息("当前修为:"..当前修为);
+	end
+end

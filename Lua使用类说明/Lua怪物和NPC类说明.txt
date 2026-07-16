@@ -1,0 +1,49 @@
+CCMonsterTree -- 怪物NPC二叉树类
+--初始化(参数为0)
+local monsterTree = CCMonsterTree(0);
+--周围怪物NPC数量
+local count = monsterTree:LuaSize();
+--获取怪物NPC对象地址(用来初始化类)
+local monsterObjectAddr = monsterTree:LuaGetMonsterInformation(i);
+-------------------------------------------------------------------
+CCMonsterInformation 怪物NPC类
+--初始化
+local __CCMonsterInformation = CCMonsterInformation(monsterObjectAddr);
+
+--ID
+lcoal ID = __CCMonsterInformation:getMonsterALLID();
+--名称
+local Name = __CCMonsterInformation:getMonsterName();
+--称号
+lcoal title = __CCMonsterInformation:getMonsterTitle();
+--当前血量
+local currentBlood = __CCMonsterInformation:getMonsterCurrentBlood();
+--最大血
+local maxBlood = __CCMonsterInformation:getMonsterMaxBlood();
+--当前蓝
+local currentMagic = __CCMonsterInformation:getMonsterCurrentMagic();
+--最大蓝
+local maxMagic = __CCMonsterInformation:getMonsterMaxMagic();
+--X 坐标
+local X = __CCMonsterInformation:getMonsterX();
+--Y 坐标
+local Y = __CCMonsterInformation:getMonsterY();
+--Z 坐标
+local Z = __CCMonsterInformation:getMonsterZ();
+--角色之间距离
+local desc = __CCMonsterInformation:getMonsterDsc();
+--怪物对象
+--__CCMonsterInformation:getObjectAddr()
+---------------------------------------------------------------------
+function 遍历所有怪物()
+	local monsterTree = CCMonsterTree(0);
+	local count = monsterTree:LuaSize();
+	输出信息("怪物数量:"..count)
+	for i=0,count-1 do  
+		local __CCMonsterInformation = CCMonsterInformation(monsterTree:LuaGetMonsterInformation(i));
+		输出信息("["..(i+1).."] 怪物ID:"..__CCMonsterInformation:getMonsterALLID().." 怪物名称:"..tostring(__CCMonsterInformation:getMonsterName())..","..
+		"称号:"..__CCMonsterInformation:getMonsterTitle()..",".." 血量:["..__CCMonsterInformation:getMonsterCurrentBlood().."/"..
+		__CCMonsterInformation:getMonsterMaxBlood().."] 坐标:["..__CCMonsterInformation:getMonsterX()..","..__CCMonsterInformation:getMonsterY()..
+		"] 距离："..__CCMonsterInformation:getMonsterDsc());
+	end
+end

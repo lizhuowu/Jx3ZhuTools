@@ -1,0 +1,49 @@
+---------------------------------------------------------------------
+CCPackPercelArray --背包包裹数组类
+--初始化说明
+local _CCPackPercelArray = CCPackPercelArray();
+--获取背包包裹数量
+local count = _CCPackPercelArray:getCount()
+--获取第N个背包包裹的首地址
+local currentBaseAddr = _CCPackPercelArray:getAddrByIndex(n)
+---------------------------------------------------------------------
+CCPackArray -- 背包数组类
+local _CCPackArray = CCPackArray(currentBaseAddr);
+--获取背包格子数量
+local count = _CCPackArray:getCount()
+--获取第N个背包格子的首地址
+local currentBaseAddr = _CCPackArray:getAddrByIndex(n)
+-----------------------------------------------------------------------
+CCPackObject --背包格子类
+local _CCPackObject = CCPackObject(currentBaseAddr);
+--物品ID
+local goodID = _CCPackObject:getGoodID();
+--物品数量
+local goodCount = _CCPackObject:getGoodCount();
+--物品名称
+local goodName = _CCPackObject:getGoodName();
+--装备或者使用物品的类型
+local goodMakeType = _CCPackObject:getMakeGoodType();
+--------------------------------------------------------------------------
+--测试遍历所有背包物品
+function 遍历所有背包物品()
+	local _CCPackPercelArray = CCPackPercelArray();
+	local count = _CCPackPercelArray:getCount();
+	for i=0,count-1 do  
+		local currentAddrPercel = _CCPackPercelArray:getAddrByIndex(i);
+		if currentAddrPercel > 0 then 
+			local _CCPackArray = CCPackArray(currentAddrPercel);
+			local countPack = _CCPackArray:getCount();
+			for j=0,countPack-1 do 
+				local currentAddrPack = _CCPackArray:getAddrByIndex(j);
+				if currentAddrPack > 0 then 
+				local _CCPackObject = CCPackObject(currentAddrPack);
+				--包裹索引是从1开始
+				输出信息("包裹索引："..(i+1)..",背包索引: "..j..",物品名称：".._CCPackObject:getGoodName()
+				..",物品ID：".._CCPackObject:getGoodID()..",物品数量：".._CCPackObject:getGoodCount()
+				..", 物品使用或装备穿戴类别：".._CCPackObject:getMakeGoodType());
+				end
+			end
+		end
+	end
+end

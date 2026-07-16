@@ -1,0 +1,6 @@
+#include "stdafx.h"
+#include "CUserConfig.h"
+
+string UserMoloName;//MOLOµÇÂ½Ãû³Æ
+string UserLoginTP;//µÇÂ½µÄIP
+int _IndexRole;//µÇÂ½µÄ½ÇÉ«Ë÷Òý

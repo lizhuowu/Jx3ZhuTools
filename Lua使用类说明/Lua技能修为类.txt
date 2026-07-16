@@ -1,0 +1,31 @@
+-----------------------------------------
+CCSkillXiuWeiTree --技能修为二叉类
+--初始化
+local _CCSkillXiuWeiTree = CCSkillXiuWeiTree();
+--获取二叉数量
+local count = _CCSkillXiuWeiTree:LuaSize();
+--获取修为对象地址
+local 修为对象地址 = _CCSkillXiuWeiTree:LuaGetSkillXiuWeiAddr(i);
+
+--------------------------------------------------
+CCSkillXiuWeiObject --技能修为类
+--初始化
+local _CCSkillXiuWeiObject = CCSkillXiuWeiObject(修为对象地址);
+--获取技能ID
+_CCSkillXiuWeiObject:getSkillID();
+--获取当前修为
+_CCSkillXiuWeiObject:getSkillXiuWei();
+
+
+
+
+
+----------------------------------------------------------------------------------
+function 遍历技能当前修为()
+	local _CCSkillXiuWeiTree = CCSkillXiuWeiTree();
+	local count = _CCSkillXiuWeiTree:LuaSize();
+	for i=0,count-1 do  
+		local _CCSkillXiuWeiObject = CCSkillXiuWeiObject(_CCSkillXiuWeiTree:LuaGetSkillXiuWeiAddr(i));
+		输出信息("技能ID:".._CCSkillXiuWeiObject:getSkillID().."升级修为：".._CCSkillXiuWeiObject:getSkillXiuWei());
+	end
+end
